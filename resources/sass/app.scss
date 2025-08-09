@@ -1,0 +1,39 @@
+@use 'tailwindcss/base';
+@use 'tailwindcss/components';
+@use 'tailwindcss/utilities';
+
+@use '@fortawesome/fontawesome-free/css/all.css';
+@use 'flatpickr/dist/flatpickr.css';
+@use 'filepond/dist/filepond.min.css';
+
+@use 'components/alert';
+@use 'components/button';
+@use 'components/card';
+@use 'components/link';
+@use 'form';
+@use 'typography';
+@use 'utility';
+
+@layer base {
+    [x-cloak] {
+        display: none !important;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    background-color: #1f2937 !important; // Tailwind bg-gray-900
+    color: white !important;
+    caret-color: white !important;
+    -webkit-text-fill-color: white !important;
+    -webkit-box-shadow: 0 0 0 1000px #1f2937 inset !important;
+    transition: background-color 9999s ease-in-out 0s;
+    border-radius: 0 !important;
+}
